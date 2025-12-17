@@ -2,6 +2,6 @@ package com.example.demo.service;
 
 import com.example.demo.entity.StudentEntity;
 
-public Interface StudentService{
+public interface StudentService{
       StudentEntity postData(StudentEntity stu);
 }
