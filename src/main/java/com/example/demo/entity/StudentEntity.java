@@ -5,7 +5,7 @@ public class StudentEntity{
     private String name;
     private String email;
     private String password;
-    private String createAt;
+    private Date createAt;
 
     public void setId(Integer id){
         this.id=id;
@@ -36,5 +36,12 @@ public class StudentEntity{
     }
     public Date getCreateAt(){
         return createAt;
+    }
+    public StudentEntity(Integer id,String name,String email,String password,Date createAt){
+        this.id=id;
+        this.name=name;
+        this.email=email;
+        this.password=password;
+        this.createAt=createAt;
     }
 }
