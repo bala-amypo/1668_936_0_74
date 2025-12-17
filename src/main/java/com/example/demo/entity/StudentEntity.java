@@ -5,4 +5,9 @@ public class StudentEntity{
     private String name;
     private String email;
     private String password;
+    private String createAt;
+
+    public void setId(Integer id){
+        this.id=id;
+    }
 }
