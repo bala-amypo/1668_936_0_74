@@ -55,18 +55,18 @@ public class ValidationEntity{
     public int getAge(){
         return age;
     }
-    public ValidationEntity(Long id;
+    public ValidationEntity(Long id,
     @Notnull
     @Size(min=2,max=10,message="must be 2 to 10 character")
-    String username;
+    String username,
     @Email(message="Email is not valid")
-    String email;
+    String email,
     @Size(min=7,max=15,message="must be 7 to 15 character")
     @Notnull(message="Password is mandatory")
-    String password;
+    String password,
     @Max(30)
     @Positive(message="Age must be positive")
-    int age;
+    int age
 ){
       this.id=id;
         this.username=username;
