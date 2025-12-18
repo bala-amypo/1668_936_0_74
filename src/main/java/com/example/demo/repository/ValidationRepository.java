@@ -1,8 +1,10 @@
 package com.example.demo.Repository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import com.example.demo.entity.ValidationEntity;
 
-
-
-public interface ValidationRepository{
+@Repository
+public interface ValidationRepository extends JpaRepository<ValidationEntity,Long>{
 
 }
