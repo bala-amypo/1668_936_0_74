@@ -32,4 +32,5 @@ public class StudentController{
    public StudentEntity find(@PathVariable int id){
     return ser.getData(id);
    }
+   @PutMapping("/put/{id}")
 }
