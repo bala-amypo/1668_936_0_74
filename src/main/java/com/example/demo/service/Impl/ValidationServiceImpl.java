@@ -14,7 +14,7 @@ import java.util.List;
 public class ValidationServiceImpl implements ValidationService{
         @Autowired ValidationRepository student;
         @Override
-        public ValidationEntity postData(ValidationEntity stu){
+        public ValidationEntity postData(ValidationEntity val){
             return student.save(val);
         }
 }
