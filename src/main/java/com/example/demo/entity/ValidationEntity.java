@@ -6,6 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.GenerationType;
 import jakarta.validation.constraints.Notnull;
+import jakarta.validation.constraints.Size;
 
 @Entity
 public class ValidationEntity{
@@ -13,9 +14,11 @@ public class ValidationEntity{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     @Notnull
-    @Size(min=2,maz=30,message)
+    @Size(min=2,max=10,message="must be 2 to 10 character")
     private String username;
+    @Email(message="Email is not valid")
     private String email;
+    @Max(6)
     private String password;
     private Integer age;
        
