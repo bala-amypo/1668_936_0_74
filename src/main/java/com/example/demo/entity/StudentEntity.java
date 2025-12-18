@@ -47,7 +47,7 @@ public class StudentEntity{
     public Date getCreateAt(){
         return createAt;
     }
-    public void StudentEntity(){
+    public StudentEntity(){
 
     }
     public StudentEntity(Integer id,String name,String email,String password,Date createAt){
