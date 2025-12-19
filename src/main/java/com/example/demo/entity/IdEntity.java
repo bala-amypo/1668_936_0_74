@@ -8,6 +8,8 @@ import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;  
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.JoinColumn;
 
 
 @Entity
@@ -22,7 +24,7 @@ public class IdEntity{
     private int idCardNo;
 
     @OneToOne
-    @JoinColumn(name=)
-    private studetails student;
+    @JoinColumn(name="student_id")
+    private Studentdetails student;
     
 }
