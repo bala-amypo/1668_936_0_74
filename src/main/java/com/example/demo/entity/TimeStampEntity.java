@@ -38,8 +38,9 @@ public class TimeStampEntity{
         this.updateAt=now;
     }
     @PreUpdate
-    LocalDateTime now =  LocalDateTime.now();
+    
     public void Onupdate(){
+    LocalDateTime now =  LocalDateTime.now();
     this.updateAt=now;
     }
 }
