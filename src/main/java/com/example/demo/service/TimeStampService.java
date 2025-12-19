@@ -4,6 +4,6 @@ import com.example.demo.entity.TimeStampEntity;
 import java.util.List;
 
 public interface TimeStampService{
-      TimeStamp postData(TimeStampEntity stu);
+      TimeStampEntity postData(TimeStampEntity stu);
      
 }
