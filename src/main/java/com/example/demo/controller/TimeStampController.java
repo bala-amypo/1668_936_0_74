@@ -21,3 +21,4 @@ public class TimeStampController{
     public TimeStampEntity sendData(@RequestBody TimeStampEntity stu){
          return ser.postData(stu);
    }
+}
