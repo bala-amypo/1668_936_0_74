@@ -19,7 +19,8 @@ public class StudentDetailsEntity{
 
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
-    private String;
-    private String student_id;
+    private String name;
+    private String email;
+    private String address;
 
 }
