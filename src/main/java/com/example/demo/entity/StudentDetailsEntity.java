@@ -19,9 +19,6 @@ public class StudentDetailsEntity{
 
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
-    private int name;
-    private String email;
-    private String password;
-    private Date createAt;
-
+    private int idCardNo;
+    private String student_id;
 }
