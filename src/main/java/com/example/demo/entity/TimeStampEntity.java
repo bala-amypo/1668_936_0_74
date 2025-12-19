@@ -26,6 +26,7 @@ public class TimeStampEntity{
     private String password;
     private LocalDateTime createAt;
     private LocalDateTime updateAt;
+    
     @PrePersist
     LocalDateTime now =  LocalDateTime.now();
     public void Oncreate(){
