@@ -25,6 +25,6 @@ public class IdEntity{
 
     @OneToOne
     @JoinColumn(name="student_id")
-    private Studentdetails student;
+    private StudentDetailsEntity student;
     
 }
