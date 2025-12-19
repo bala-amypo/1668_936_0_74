@@ -28,11 +28,12 @@ public class TimeStampEntity{
     private LocalDateTime updateAt;
     @PrePersist
     public void Oncreate(){
-        LocalDateTime now =  LocalDateTime().now();
+        LocalDateTime now =  LocalDateTime.now();
         this.createAt=now;
         this.updateAt=now;
     }
     @PreUpdate
-    public void On
-
+    public void Onupdate(){
+    this.updateAt=now;
+    }
 }
