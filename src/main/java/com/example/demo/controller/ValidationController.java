@@ -19,6 +19,12 @@ public class ValidationController{
     @Autowired ValidationService ser;
     @PostMapping("/valpost")
     public ValidationEntity sendData(@Valid @RequestBody ValidationEntity val){
-         return ser.postData(val);
+         return ser.postdata(val);
    }
+   
+   @GetMapping("/find/{id}")
+   public StudentEntity find(@PathVariable int id){
+    return ser.getdata(id);
+   }
+
 }
