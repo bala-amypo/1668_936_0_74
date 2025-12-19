@@ -19,6 +19,7 @@ public class StudentDetailsEntity{
 
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
-    private int idCardNo;
+    private String;
     private String student_id;
+
 }
