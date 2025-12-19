@@ -14,11 +14,11 @@ import java.util.List;
 public class ValidationServiceImpl implements ValidationService{
         @Autowired ValidationRepository student;
         @Override
-        public ValidationEntity postData(ValidationEntity val){
+        public ValidationEntity postdata(ValidationEntity val){
             return student.save(val);
         }
         @Override
-         public ValidationEntity getData(int id){
+         public ValidationEntity getdata(int id){
             return student.findById(id);
          }
 }

@@ -22,8 +22,8 @@ public class ValidationController{
          return ser.postdata(val);
    }
    
-   @GetMapping("/find/{id}")
-   public StudentEntity find(@PathVariable int id){
+   @GetMapping("/valfind/{id}")
+   public ValidationEntity find(@PathVariable int id){
     return ser.getdata(id);
    }
 
