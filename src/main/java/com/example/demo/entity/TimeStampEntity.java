@@ -9,6 +9,7 @@ import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;  
+import jakarta.persistence.PrePersist;
 
 @Entity
 @Data
@@ -18,10 +19,11 @@ import lombok.NoArgsConstructor;
 public class TimeStampEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
     private String name;
     private String email;
     private String password;
     private LocalDateTime createAt;
     private LocalDateTime updateAt;
+    
 }
