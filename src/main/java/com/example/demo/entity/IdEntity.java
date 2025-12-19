@@ -19,7 +19,10 @@ public class IdEntity{
 
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
-    private int idCardNo;;
-    private String student_id;
+    private int idCardNo;
+
+    @OneToOne
+    @JoinColumn(name=)
+    private studetails student;
     
 }
